@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Samriti!</title>
+    <style>
+        body {
+            font-family: Lucida , sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide h1, .slide p {
+            color: black;
+            text-shadow: 0px 0px  3px rgba(0, 0, 0, 0.7); 
+        }
+
+        .slide#slide1 {
+            background: url('https://i.pinimg.com/736x/89/2d/23/892d23ed0eadd4bc4df7e84641e82f77.jpg') center/cover no-repeat;
+        }
+
+        .slide#slide2 {
+            background: url('https://i.pinimg.com/736x/0a/aa/2c/0aaa2c9c58e64cb1129fc80ae96373f3.jpg') center/cover no-repeat;
+        }
+
+        .slide#slide3 {
+            background: url('https://i.pinimg.com/736x/41/d9/c6/41d9c6b7ef4d95ff8e2571c8e67efe76.jpg') center/cover no-repeat;
+        }
+
+        .slide#slide4 {
+            background: url('download.png') center/cover no-repeat;
+        }
+
+        .slide#slide5 {
+            background: url('https://i.pinimg.com/originals/13/9c/d4/139cd483e3e78fd77e782f56f8cbe5ef.jpg') center/cover no-repeat;
+        }
+
+        .slide#slide6 {
+            background: url('https://i.pinimg.com/736x/3e/18/2f/3e182f65446f5317b35fe32df8e5b5e1.jpg') center/cover no-repeat;
+        }
+
+        button {
+            background: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: #d81b60;
+        }
+
+        #slide3 .collage {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #slide3 .collage img {
+            width: 400px
+            height:400px;
+            object-fit: cover; /* Ensures the images fill the area without distortion */
+            border-radius: 8px; /* Optional: Add rounded corners to images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+        }
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the grid */
+    align-items: center;
+}
+
+/* Styling individual images */
+.collage img {
+    width: 150px; /* Adjust the width to make images larger */
+    height: 150px; /* Maintain consistent height */
+    object-fit: cover; /* Ensure images don't distort */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+/* Hover effect for images */
+.collage img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+p {
+    font-size: 25px; /* Increase the font size of paragraphs */
+}
+
+body {
+    font-size: 25px;  /* Adjust the base font size */
+}
+.slide h1, .slide p {
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Add audio player -->
+  <audio controls autoplay loop >
+  <source src="audio00.mp3" type="audio/mpeg">
+  
+</audio>
+
+
+
+
+
+    <div class="slider">
+        <!-- Slide 1 -->
+        <div class="slide active" id="slide1">
+            <h1>Hloooosss, Namesteee Jiiiii,</h1>
+            <img src="slide1.jpg" alt="photo">
+            <p> Guuuud maarningss Samritii didiiii jiii. kaisiiii h reyyy tuu. kyaaa kr rhiiii, letii huii h naaaa🤣🤣🤣 dekhaaa ptaaa h mujheee😎😎. vaiseeeeee🙂, puchhh kaiseee, vaiseee shrm toh aati nahi hogii inte dinn baat na krkee 😔😔😔😔. Samritiii siii bohtt yaad aati h aapkiii, pleasee wapiss aajaoo naaa🙂. abse nahi krungaa aapko pareshan aur tng, aur dukhi bhi nhi krungaa bilkul bhiii. 1% bhii dukhiii nahii krungaa. pleaseeee wapisss aaja naa :( apni sbhii gltiyaa mantaa hu aurr sb sahiii kr dungaa pehele jaisaa, pehele se bhii sahiii, pleaseee aajaa naa yrr. 💗💗</p>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" id="slide2">
+             <h1>Samritiii Bhenaaaaaaaa</h1>
+            <p>Samriitiii dekh yrr, ager tu yeh padh rhii h tohh pleasee ajaaa na wapisss, sb sahiii hogaa ab ksmm se. aurr na mujhe pta h merii bohtt baate h jo tujhe jooth lgtii h, vo sb btaa tu, mei un sbkaa bhii proof de dungaa. Samritiii mummy ksm, meri gltiyoo ke sath na yekk koii toh bohtt bdii misunderstanding nhoo gyii h, jisee ptaa krna aur clear krnaa bohtt jruuriii h. aur vo toh jb tu ayegiii tbhii possible h na. Samritiii tu he merii iklautii sbseeee accchiiii aur favourite behnnn, aisee naraz toh mtt reh yrr itnaa jyadaa timee. pleaseee ajaaa😭😭😭😭😭 </p>
+            <img src="slide2.jpg" alt="Chat Screenshot" style="width: 300px; height: auto;">
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+      <!-- Slide 3 -->
+<div class="slide" id="slide3">
+    <h1>Behnnaa Jiiii pleasee maaf kr dijiyeee🙂🙂 </h1>
+    <div class="collage">
+        <img src="img2.jpg" alt="Image 1">
+        <img src="img1.jpg" alt="Image 2">
+        <img src="img3.jpg" alt="Image 3">
+        <img src="img4.jpg" alt="Image 4">
+        <img src="img5.jpg" alt="Image 5">
+        <img src="img6.jpg" alt="Image 6">
+        <img src="img7.jpg" alt="Image 7">
+        <img src="img8.jpg" alt="Image 8">
+        <img src="img9.jpg" alt="Image 9">
+        <p> Pleeaseeee samritii wapisss aajaaaa😭😭😭😭😭</p>
+    </div>
+    <button onclick="nextSlide()">Next</button>
+</div>
+
+
+        <!-- Slide 4 -->
+        <div class="slide" id="slide4">
+             <h1>Tujhee Yaad h ??</h1>
+            <p> Samritiii tujhe yaad h tune bola tha ki yek din mei tujh se baat bnd krdunga, phir maine bola tha ki tu he bata bnd kregi yek din mujh se meri hrktoo ke karn, aur tune bolaa tha ki tuu nahii jayegii kbhii bhiii. aur yek baar yeh bhi bola the ki tu bhlee jitna mrzii naraz hojayee, mei mnaunga toh tu ayegiii pakkaa. aurr behn kitnaa ignoree kregii aurr😭😭😭 aaja na pleaseeeeeee. ab aur nahi rhaa jata rr aisee, pleaseee aaa jaaaa. sb sahii krte h na mil kr donoo. is bar koi shikayat nahiii aane dungaa pakaa. aurr phir tujhe ladkii bhi toh dhundnii h meree liyee🥰🥰🥰🥰 phir uske baad teraa bndaa dhundengee😊😂😂. aaja naa yr samritii pleaseee. Tu ayegiii phirr teree paisoo ka pizzzaaa bhiii tohh khanaa h😋😋😋😋😂 .  Bhenn samritiii, pleaseee aaja wapiss  🙂  .बहन समृति कृपा मुझे माफ कर दे और वापस अजा प्लीज</p>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide" id="slide5">
+            <h1>Behnn tuu ayegii naa wapissss🙂</h1>
+            <button onclick="showFinalSlide()">Haa meii toh aaungii wapiss🥰🥰</button>
+            <button onclick="reloadDialog()">Nahiii, abhi aur naraz rhungii😤😤</button>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide" id="slide6">
+            <h1>Thankkkkssss Youuuuuuuuu😭😭😭😭😭💟💟 Bhottt bohtttt bohttt jyadaaaa thanksssyouuuu Samritiiiii. Chl ab jldi jldi mujhe unblock krdeee🥰🥰</h1>
+            <p>Abse pakka koi maukaa nahi dunga naraz hone ka 😭😭😭😭 ajaaaa pleasee samritiiiii😭😭</p>
+        </div>
+    </div>
+
+    <script>
+       let currentSlide = 1;
+
+function nextSlide() {
+    document.getElementById(`slide${currentSlide}`).classList.remove('active');
+    currentSlide++;
+    if (document.getElementById(`slide${currentSlide}`)) {
+        document.getElementById(`slide${currentSlide}`).classList.add('active');
+    }
+}
+
+
+        function reloadDialog() {
+            alert("Pleaseee Samritiiiii Diduuuuu aajaoo naaa🥺🥺🥺");
+        } 
+function showFinalSlide() {
+    document.getElementById('slide5').classList.remove('active');
+    document.getElementById('slide6').classList.add('active');
+}
+
+    </script>
+</body>
+</html>
